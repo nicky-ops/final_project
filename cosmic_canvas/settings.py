@@ -10,7 +10,10 @@ SECRET_KEY = 'your-secret-key-here'
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '.koyeb.app',
+]
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
