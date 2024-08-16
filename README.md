@@ -26,4 +26,13 @@ source venv/bin/activate # On Windows use `venv\Scripts\activate\`
     `python manage.py runserver`
 8. Access the application at (http://localhost:8000)
 
-You can access the live webapp by <a href="https://corporate-ardyce-ohmitek-8a95df29.koyeb.app" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: #fff; background-color: #007bff; border-radius: 5px; text-decoration: none;">Clicking Me!</a>
+You can access the live webapp by " 
+[**Clicking Me!**](https://corporate-ardyce-ohmitek-8a95df29.koyeb.app)
+
+
+## Contributors
+[![Button Text](https://img.shields.io/badge/Button-Click_me-blue)](https://github.com/DGathu)
+[![Button Text](https://img.shields.io/badge/Button-Click_me-blue)](https://github.com/nicky-ops)
+[![Button Text](https://img.shields.io/badge/Button-Click_me-blue)]()
+[![Button Text](https://img.shields.io/badge/Button-Click_me-blue)]()
+[![Button Text](https://img.shields.io/badge/Button-Click_me-blue)]()
