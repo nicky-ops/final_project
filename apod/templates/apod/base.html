@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Canvas</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        space: {
+                            100: '#C7D2FE',
+                            200: '#818CF8',
+                            300: '#4F46E5',
+                            400: '#4338CA',
+                            500: '#3730A3',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <nav class="bg-space-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="{% url 'home' %}" class="text-2xl font-bold text-shadow">Cosmic Canvas</a>
+            <a href="{% url 'timeline' %}" class="text-lg hover:text-space-100 transition-colors duration-200">Timeline</a>
+        </div>
+    </nav>
+    
+    <main class="container mx-auto mt-8 px-4">
+        {% block content %}{% endblock %}
+    </main>
+
+    <script>
+        // Add any custom animations or JavaScript here
+        document.addEventListener('alpine:init', () => {
+            Alpine.store('animations', {
+                fadeIn(el) {
+                    el.style.transition = 'opacity 0.5s ease-in-out';
+                    el.style.opacity = 0;
+                    setTimeout(() => {
+                        el.style.opacity = 1;
+                    }, 50);
+                },
+                slideIn(el) {
+                    el.style.transition = 'transform 0.5s ease-in-out';
+                    el.style.transform = 'translateX(-20px)';
+                    setTimeout(() => {
+                        el.style.transform = 'translateX(0)';
+                    }, 50);
+                }
+            });
+        });
+    </script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>
