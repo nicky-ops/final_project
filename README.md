@@ -31,8 +31,8 @@ You can access the live webapp by "
 
 
 ## Contributors
-[![Button Text](https://img.shields.io/badge/Button-Click_me-blue)](https://github.com/DGathu)
-[![Button Text](https://img.shields.io/badge/Button-Click_me-blue)](https://github.com/nicky-ops)
-[![Button Text](https://img.shields.io/badge/Button-Click_me-blue)]()
-[![Button Text](https://img.shields.io/badge/Button-Click_me-blue)]()
-[![Button Text](https://img.shields.io/badge/Button-Click_me-blue)]()
+[![](https://img.shields.io/badge/Button-Click_me-blue)](https://github.com/DGathu)
+[![](https://img.shields.io/badge/Button-Click_me-blue)](https://github.com/nicky-ops)
+[![](https://img.shields.io/badge/Button-Click_me-blue)]()
+[![](https://img.shields.io/badge/Button-Click_me-blue)]()
+[![](https://img.shields.io/badge/Button-Click_me-blue)]()
